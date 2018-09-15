@@ -1,22 +1,36 @@
 {
-  "name": "auto-annotation",
-  "version": "0.1.0",
-  "description": "use a easy way to write annotations in our project",
-  "main": "index.js",
-  "scripts": {
-    "test": "ls"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kingder-c/autoAnnotation.git"
-  },
-  "keywords": [
-    "annotations"
-  ],
-  "author": "kingder",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kingder-c/autoAnnotation/issues"
-  },
-  "homepage": "https://github.com/kingder-c/autoAnnotation#readme"
+    "name": "autoannotation",
+    "displayName": "autoAnnotation",
+    "description": "use a easy way to write annotation",
+    "version": "0.0.1",
+    "publisher": "kingder",
+    "engines": {
+        "vscode": "^1.27.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.sayHello"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.sayHello",
+                "title": "Hello World"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21",
+        "eslint": "^4.11.0",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
+    }
 }
