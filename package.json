@@ -1,0 +1,22 @@
+{
+  "name": "auto-annotation",
+  "version": "0.1.0",
+  "description": "use a easy way to write annotations in our project",
+  "main": "index.js",
+  "scripts": {
+    "test": "ls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingder-c/autoAnnotation.git"
+  },
+  "keywords": [
+    "annotations"
+  ],
+  "author": "kingder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kingder-c/autoAnnotation/issues"
+  },
+  "homepage": "https://github.com/kingder-c/autoAnnotation#readme"
+}
